@@ -1,10 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Reactive Player</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@300..800&family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap" rel="stylesheet">
+
+		<meta name="description" content="Reproductor multimedia interactivo desarrollado con p5.js o Three.js. Proyecto Final de Computación Creativa.">
+		<meta name="author" content="JuanFuent.es">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Reactive Player | Computación Creativa">
+		<meta property="og:description" content="Reproductor multimedia interactivo con visualización reactiva y narrativa visual propia">
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Reactive Player | Computación Creativa">
+		<meta name="twitter:description" content="Reproductor multimedia interactivo con visualización reactiva y narrativa visual propia">
+
+		<title>Reactive Player | Computación Creativa</title>
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
+		<header class="hero" id="hero">
+			<h1>Reactive Player</h1>
+			<p class="lead">Reproductor multimedia interactivo - Computación Creativa</p>
+			<p>💀 <strong>Deadline: 2 de Diciembre del 2025</strong></p>
+		</header>
+
+		<main>
+			<section class="intro-block" id="intro">
+				<nav id="challenge-nav" aria-label="Navegación principal">
+					<h2>Índice</h2>
+					<ul>
+						<li><a href="#objective" class="challenge-link" aria-label="Objetivo">Introducción</a></li>
+						<li><a href="#structure" class="challenge-link" aria-label="Estructura y Semántica">Estructura</a></li>
+						<li><a href="#metadata" class="challenge-link" aria-label="Metadata">Metadata</a></li>
+						<li><a href="#repository" class="challenge-link" aria-label="Repositorio en Github">Repositorio</a></li>
+						<li><a href="#tips" class="challenge-link" aria-label="Tips">Tips</a></li>
+						<li><a href="#recommendations" class="challenge-link" aria-label="Recomendaciones">Recomendaciones</a></li>
+						<li><a href="#rubrica" class="challenge-link" aria-label="Rúbrica de evaluación">Rúbrica</a></li>
+						<li><a href="#delivery" class="challenge-link" aria-label="Entrega">Entrega</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<section id="objective">
+				<h2>Introducción</h2>
+				<p>
+					El propósito de este ejercicio es presentar un micrositio que acompañe y explique tu Reactive Player: la interfaz, los controles, la visualización sonora y el concepto detrás de la experiencia.
+				</p>
+				<p>
+					Usa este espacio para documentar decisiones técnicas y diseñar una narrativa clara sobre tu reproductor. Considera incluir:
+				</p>
+				<ol>
+					<li>Al menos una pista principal y, si aplica, una versión de prueba o loop.</li>
+					<li>Un póster, cover art o identidad visual específica del reproductor.</li>
+					<li>Descripción y captura de los controles clave (play/pause, volumen, progreso, mute, etc.).</li>
+					<li>Estados visuales o animaciones del visualizador reactivo (amplitud, espectro, partículas, etc.).</li>
+					<li>Enlaces al demo publicado, video walkthrough o embed del reproductor.</li>
+					<li>Resumen de dependencias, librerías o APIs utilizadas.</li>
+					<li>Cualquier recurso adicional que ayude a entender la experiencia sonora.</li>
+				</ol>
+			</section>
+
+			<hr id="separator-objective-structure" aria-hidden="true">
+
+			<section id="structure">
+				<h2>Estructura del proyecto</h2>
+				<p>
+					Integrar variables, funciones, clases, instancias y vectores con conceptos multimedia:
+					carga de recursos, animación, eventos del usuario y procesamiento de audio con p5.sound u otras APIs.
+				</p>
+				<p>
+					Estructura tu entrega en tres capas: narrativa/visual, lógica de reproducción y documentación. Cada capa debe
+					reforzar la experiencia y mostrar decisiones conscientes.
+				</p>
+				<ul>
+					<li>Cargar al menos tres pistas de audio.</li>
+					<li>Controles: play/pause, volumen y barra de progreso.</li>
+					<li>Al menos una visualización reactiva (ondas, barras, partículas, figuras, espectro, etc.).</li>
+					<li>Mínimo una clase propia que organice la lógica de visualización.</li>
+					<li>Uso significativo de vectores/arrays (partículas, buffers, historial).</li>
+					<li>Pantalla de bienvenida tipo preloader que unifique narrativa y carga.</li>
+					<li>Paletas de color diferenciadas por canción, aplicadas dinámicamente al player.</li>
+					<li>Función de captura (screenshot) para documentar visuales directamente desde la UI.</li>
+					<li>Arquitectura clara con funciones separadas.</li>
+					<li>Entrega publicada en GitHub Pages.</li>
+				</ul>
+			</section>
+
+			<section id="metadata">
+				<h2>Metadata</h2>
+				<ul>
+					<li>Incluye un título de página.</li>
+					<li>Define el idioma del documento.</li>
+					<li>Agrega un favicon compatible con navegadores modernos y fallback (<a href="https://realfavicongenerator.net/" target="_blank" rel="noreferrer">realfavicongenerator.net</a>).</li>
+					<li>Configura metadata Open Graph para mejorar previsualizaciones.</li>
+				</ul>
+			</section>
+
+			<article id="repository">
+				<h2>Repositorio en GitHub</h2>
+				<p>El código debe alojarse en un repositorio público en <strong>GitHub</strong>:</p>
+				<ul>
+					<li>Asegura que el repositorio sea público.</li>
+					<li>Incluye un <code>README.md</code>
+						con descripción y enlaces relevantes.</li>
+					<li>Realiza commits descriptivos (evita “update” o “fix”).</li>
+					<li>Publica el proyecto en <strong>GitHub Pages</strong>.</li>
+					<li>Incluye un enlace al sitio en la descripción del repositorio.</li>
+				</ul>
+			</article>
+
+			<article id="tips">
+				<h2>Tips</h2>
+				<p>¿No sabes por dónde empezar? Considera:</p>
+				<ul>
+					<li>Crea un moodboard para definir el estilo.</li>
+					<li>Usa <a href="https://color.adobe.com/trends" target="_blank" rel="noreferrer">Adobe Color</a>
+						o <a href="https://coolors.co/" target="_blank" rel="noreferrer">Coolors</a>
+						para paletas.</li>
+					<li>Inspírate en <a href="https://linktr.ee/" target="_blank" rel="noreferrer">Linktree</a>, <a href="https://heylink.me/" target="_blank" rel="noreferrer">Heylink</a>
+						o <a href="https://beacons.ai/" target="_blank" rel="noreferrer">Beacons.ai</a>.</li>
+				</ul>
+			</article>
+
+			<article id="recommendations">
+				<h2>Recomendaciones</h2>
+				<p>Mejora la experiencia considerando:</p>
+				<ul>
+					<li>Evitar enlaces rotos o que requieran autenticación.</li>
+					<li>Personalizar los enlaces con estilos distintivos.</li>
+					<li>Incluir una sección “Sobre mí” o un archivo <a href="../humans.txt" target="_blank" rel="noreferrer">humans.txt</a>.</li>
+				</ul>
+			</article>
+
+			<section id="rubrica">
+				<h2>Rúbrica de evaluación (100%)</h2>
+				<div class="rubric">
+					<div class="rubric__group">
+						<h3>1. Funcionalidad del reproductor · 35%</h3>
+						<ul>
+							<li>10% El audio carga correctamente y se reproduce sin errores.</li>
+							<li>10% Controles esenciales implementados (play/pause, volumen, progreso).</li>
+							<li>15% Visualización reactiva coherente (amplitud, FFT, ritmo, etc.).</li>
+						</ul>
+					</div>
+					<div class="rubric__group">
+						<h3>2. Uso adecuado de programación · 30%</h3>
+						<ul>
+							<li>10% Uso correcto de clases propias.</li>
+							<li>10% Uso significativo de vectores/arrays.</li>
+							<li>10% Estructura clara: variables definidas y funciones separadas.</li>
+						</ul>
+					</div>
+					<div class="rubric__group">
+						<h3>3. Diseño visual y experiencia · 20%</h3>
+						<ul>
+							<li>10% Estética clara y consistente.</li>
+							<li>10% Interacción fluida, transiciones limpias y paleta adecuada.</li>
+						</ul>
+					</div>
+					<div class="rubric__group">
+						<h3>4. Documentación y presentación · 10%</h3>
+						<ul>
+							<li>5% README claro con instrucciones, concepto visual y capturas/GIF.</li>
+							<li>5% Presentación final explicando decisiones de diseño y aspectos técnicos.</li>
+						</ul>
+					</div>
+					<div class="rubric__group">
+						<h3>5. Publicación y entrega · 5%</h3>
+						<ul>
+							<li>5% Proyecto publicado y funcionando en GitHub Pages.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="delivery">
+				<h2>Entrega</h2>
+				<p>El proyecto debe estar publicado en GitHub Pages con README y botón accesible al proyecto live.</p>
+			</section>
+		</main>
+
+		<footer class="site-footer" id="footer">
+			<p>Reactive Player · Proyecto Final de Computación Creativa</p>
+			<p>
+				<small>
+					Documentación del reproductor multimedia interactivo desarrollado con p5.js o Three.js
+				</small>
+			</p>
+		</footer>
 	</body>
 </html>
