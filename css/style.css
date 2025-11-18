@@ -77,7 +77,8 @@ a:focus-visible {
 
 ul,
 ol {
-	list-style-position: outside;
+	font-size: .9em;
+	list-style: square;
 }
 
 p {
@@ -123,7 +124,8 @@ pre code {
 }
 
 #challenge-main-header {
-	padding: 1em
+	padding: 1em;
+	text-align: left;
 }
 #challenge-header {
 	display: block;
@@ -159,14 +161,25 @@ nav#challenge-nav ul li {
 	margin: .5em 0;
 }
 
-a {
+a.challenge-link {
 	background-color: var(--bg-color);
 	color: var(--yellow);
 }
 
-a:hover {
+a.challenge-link:hover {
 	background-color: var(--yellow);
 	color: var(--bg-color);
+}
+
+a#challenge-logo {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
+
+a#challenge-logo:hover svg {
+	fill: var(--yellow);
 }
 
 a.challenge-link {
@@ -188,19 +201,29 @@ section {
 }
 
 h1 {
-	font-size: 2.5em;
 	text-transform: uppercase;
+	font-stretch: 100%;
+	font-variation-settings: "wdth" 125, "wgth" 900, "slnt" 10;
+	font-size: 48px;
 }
 
 h2 {
+	font-variation-settings: "wdth" 125, "wgth" 800, "slnt" 10;
 	font-size: 2em;
-	margin: 1em 0;
+	margin: 1em 0 .25em 0;
 	text-transform: uppercase;
+	color: var(--pink);
 }
 
-p {
-	margin: 0 auto
-}
+section:nth-child(1) h2 { color: var(--orange); }
+section:nth-child(2) h2 { color: var(--pink); }
+section:nth-child(3) h2 { color: var(--green); }
+section:nth-child(4) h2 { color: var(--yellow); }
+section:nth-child(5) h2 { color: var(--orange); }
+section:nth-child(6) h2 { color: var(--pink); }
+section:nth-child(7) h2 { color: var(--green); }
+section:nth-child(8) h2 { color: var(--yellow); }
+section:nth-child(9) h2 { color: var(--orange); }
 
 .text-center {
 	text-align: center

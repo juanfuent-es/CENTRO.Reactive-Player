@@ -26,8 +26,8 @@
 	</head>
 	<body>
 
-		<header class="container text-center" id="challenge-main-header">
-			<a href="https://centro.edu.mx/computacion-creativa/" target="_blank" rel="noreferrer" aria-label="Computación Creativa | CENTRO">
+		<header class="container" id="challenge-main-header">
+			<a href="https://centro.edu.mx/computacion-creativa/" target="_blank" rel="noreferrer" aria-label="Computación Creativa | CENTRO" id="challenge-logo">
 				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 100 20" width="100" height="20" fill="#fefaf1">
 					<path d="M9.56,16.38c-2.81,0-4.8-2.34-4.8-4.91s1.99-4.91,4.8-4.91c1.87,0,3.63,1.29,4.21,2.57l3.39-1.64c-1.05-2.46-4.1-4.68-7.72-4.68C3.7,2.81.43,6.9.43,11.35c0,4.91,3.74,8.54,9.01,8.54,4.45,0,6.9-2.57,7.96-5.03l-3.39-1.64c-.59,1.4-2.34,3.16-4.45,3.16Z"/>
 					<path d="M27.22,16.38c-2.34,0-4.45-1.52-4.56-3.98h12.52c0-5.27-2.93-9.48-8.07-9.48s-8.42,4.21-8.42,8.54c0,4.91,3.63,8.54,8.66,8.54,4.33,0,6.79-2.11,8.07-3.98l-3.28-1.87c-.35.47-1.76,2.22-4.91,2.22ZM27.22,6.08c2.69,0,3.98,2.34,3.98,3.28h-8.42c.35-1.76,2.11-3.28,4.45-3.28Z"/>
@@ -43,7 +43,8 @@
 		<main class="container" id="challenge-container">
 			<header class="text-center" id="challenge-header">
 				<h1>Reactive Player</h1>
-				<p class="lead">Reproductor multimedia interactivo - Computación Creativa</p>
+				<p class="lead">Reproductor multimedia interactivo. <br>
+					<small>Segundo Semestre - Computación Creativa</small></p>
 				<p>💀 <strong>Deadline: 2 de Diciembre del 2025</strong></p>
 			</header>
 			<section class="intro-block" id="intro">
@@ -65,19 +66,21 @@
 			<section id="objective">
 				<h2>Introducción</h2>
 				<p>
-					El propósito de este ejercicio es presentar un micrositio que acompañe y explique tu Reactive Player: la interfaz, los controles, la visualización sonora y el concepto detrás de la experiencia.
+					El propósito de este ejercicio es presentar un micrositio que acompañe y explique tu Reproductor Reactivo: interfaz, controles, visualización sonora y concepto detrás de la experiencia.
 				</p>
 				<p>
 					Usa este espacio para documentar decisiones técnicas y diseñar una narrativa clara sobre tu reproductor. Considera incluir:
 				</p>
 				<ol>
-					<li>Al menos una pista principal y, si aplica, una versión de prueba o loop.</li>
-					<li>Un póster, cover art o identidad visual específica del reproductor.</li>
-					<li>Descripción y captura de los controles clave (play/pause, volumen, progreso, mute, etc.).</li>
-					<li>Estados visuales o animaciones del visualizador reactivo (amplitud, espectro, partículas, etc.).</li>
-					<li>Enlaces al demo publicado, video walkthrough o embed del reproductor.</li>
-					<li>Resumen de dependencias, librerías o APIs utilizadas.</li>
-					<li>Cualquier recurso adicional que ayude a entender la experiencia sonora.</li>
+					<li>Título del proyecto.</li>
+					<li>Pantalla de bienvenida tipo preloader que unifique narrativa y carga.</li>
+					<li>Al menos tres pistas de audio.</li>
+					<li>Controles: play/pause, anterior/siguiente.</li>
+					<li>Mínimo una clase propia que organice la lógica de visualización.</li>
+					<li>Uso significativo de vectores/arrays (partículas, dimensiones, posiciones, etc.).</li>
+					<li>Paletas de color diferenciadas por canción, aplicadas dinámicamente al reproductor.</li>
+					<li>Arquitectura clara con funciones separadas.</li>
+					<li>Entrega publicada en GitHub Pages.</li>
 				</ol>
 			</section>
 
@@ -85,7 +88,7 @@
 				<h2>Estructura del proyecto</h2>
 				<p>
 					Integrar variables, funciones, clases, instancias y vectores con conceptos multimedia:
-					carga de recursos, animación, eventos del usuario y procesamiento de audio con p5.sound u otras APIs.
+					Carga de recursos, animación, eventos del usuario y procesamiento de audio con p5.sound u otras APIs.
 				</p>
 				<p>
 					Estructura tu entrega en tres capas: narrativa/visual, lógica de reproducción y documentación. Cada capa debe
@@ -136,8 +139,6 @@
 					<li>Usa <a href="https://color.adobe.com/trends" target="_blank" rel="noreferrer">Adobe Color</a>
 						o <a href="https://coolors.co/" target="_blank" rel="noreferrer">Coolors</a>
 						para paletas.</li>
-					<li>Inspírate en <a href="https://linktr.ee/" target="_blank" rel="noreferrer">Linktree</a>, <a href="https://heylink.me/" target="_blank" rel="noreferrer">Heylink</a>
-						o <a href="https://beacons.ai/" target="_blank" rel="noreferrer">Beacons.ai</a>.</li>
 				</ul>
 			</section>
 
